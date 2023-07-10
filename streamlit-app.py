@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title="Hoops Hero", page_icon="🏀", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Big Data for NBA", page_icon="🏀", initial_sidebar_state="expanded")
 
 ##########################################
 ##  Load and Prep Data                  ##
@@ -80,7 +80,8 @@ heading_properties = [('font-size', '16px'),('text-align', 'center'),
                       ('color', 'black'),  ('font-weight', 'bold'),
                       ('background', 'mediumturquoise'),('border', '1.2px solid')]
 
-cell_properties = [('font-size', '16px'),('text-align', 'center')]
+#set font color to black for all cells
+cell_properties = [('font-size', '16px'),('text-align', 'center'),('color','black')]
 
 dfstyle = [{"selector": "th", "props": heading_properties},
                {"selector": "td", "props": cell_properties}]
@@ -122,7 +123,6 @@ with col3:
 
 st.sidebar.markdown(" ## About Hoops Hero")
 st.sidebar.markdown("This prediction model places each current NBA player into one of seven market value buckets, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )              
-st.sidebar.info("Read more about how the model works and see the code on my [Github](https://github.com/andreilevin/HoopsHero).", icon="ℹ️")
 
 
 ##########################################
