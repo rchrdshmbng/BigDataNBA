@@ -214,6 +214,8 @@ The seven market value buckets used were:  \$0-5M, \$5-10M, \$10-15M, \$15-20M, 
 ##########################################
    
 with tab_explore:
+    #set the font color to black
+    st.markdown('<style>div.stButton > button:first-child {color: black;}</style>', unsafe_allow_html=True)
     
     ########## 
     expand_allplayers = st.expander("Most Overvalued/Undervalued Players", expanded=False)
