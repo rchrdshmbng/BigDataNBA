@@ -95,6 +95,7 @@ st.markdown(
  #   font-weight: bold;
     background: aliceblue;
     font-size: 18px;
+    color: black;
 }
 </style>
 """,
