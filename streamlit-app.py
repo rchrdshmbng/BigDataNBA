@@ -37,54 +37,54 @@ dfteams, team_to_tm = load_and_prep_teams()
 cols = ['Name','Team','Position', 'Age', 'Height', 'Weight', 'Salary ($M)','Market Value ($M)', 'Surplus Value ($M)',]
 
 
-##########################################
-##  Style and Formatting                ##
-##########################################
+############################################
+##  Radical Revamp of Aesthetics         ##
+############################################
 
-# CSS for tables
+# Styling for tables
 
-hide_table_row_index = """
+modify_table_row_index = """
             <style>
-            thead tr th:first-child {display:none}
-            tbody th {display:none}
+            thead tr th:first-child {display:block}
+            tbody th {display:block}
             </style>   """
 
-center_heading_text = """
+align_heading_left = """
     <style>
-        .col_heading   {text-align: center !important}
+        .col_heading   {text-align: left !important}
     </style>          """
     
-center_row_text = """
+align_row_left = """
     <style>
-        td  {text-align: center !important}
+        td  {text-align: left !important}
     </style>      """
 
-# Inject CSS with Markdown
+# Insert CSS with Markdown
 
-st.markdown(hide_table_row_index, unsafe_allow_html=True)
-st.markdown(center_heading_text, unsafe_allow_html=True) 
-st.markdown(center_row_text, unsafe_allow_html=True) 
+st.markdown(modify_table_row_index, unsafe_allow_html=True)
+st.markdown(align_heading_left, unsafe_allow_html=True) 
+st.markdown(align_row_left, unsafe_allow_html=True) 
 
-# More Table Styling
+# Further Table Styling
 
-def color_surplusvalue(val):
+def color_difference_value(val):
     if str(val) == '0':
-        color = 'azure'
+        color = 'ivory'
     elif str(val)[0] == '-':
-        color = 'lightpink'
+        color = 'lightcoral'
     else:
-        color = 'lightgreen'
+        color = 'lightseagreen'
     return 'background-color: %s' % color
 
-heading_properties = [('font-size', '16px'),('text-align', 'center'),
-                      ('color', 'black'),  ('font-weight', 'bold'),
-                      ('background', 'mediumturquoise'),('border', '1.2px solid')]
+title_properties = [('font-size', '18px'),('text-align', 'left'),
+                      ('color', 'darkblue'),  ('font-weight', 'bold'),
+                      ('background', 'plum'),('border', '1.6px dashed')]
 
-#set font color to black for all cells
-cell_properties = [('font-size', '16px'),('text-align', 'center'),('color','black')]
+#set font color to darkgrey for all cells
+body_properties = [('font-size', '18px'),('text-align', 'left'),('color','darkgrey')]
 
-dfstyle = [{"selector": "th", "props": heading_properties},
-               {"selector": "td", "props": cell_properties}]
+dflook = [{"selector": "th", "props": title_properties},
+               {"selector": "td", "props": body_properties}]
 
 # Expander Styling
 
@@ -93,14 +93,15 @@ st.markdown(
 <style>
 .streamlit-expanderHeader {
  #   font-weight: bold;
-    background: aliceblue;
-    font-size: 18px;
-    color: black;
+    background: lemonchiffon;
+    font-size: 20px;
+    color: darkblue;
 }
 </style>
 """,
     unsafe_allow_html=True,
 )
+
     
   
 
