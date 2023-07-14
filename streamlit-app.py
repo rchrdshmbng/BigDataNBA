@@ -109,7 +109,7 @@ st.markdown(
 ##########################################
 
 st.title("Big Data for NBA")
-st.markdown('''##### <span style="color:gray">Predict the market value of NBA players from their stats</span>
+st.markdown('''##### <span style="color:gray">Predicting NBA players' market value based on their statistical performance</span>
             ''', unsafe_allow_html=True)
                 
 tab_player, tab_team, tab_explore, tab_faq = st.tabs(["Player Lookup", "Team Lookup", "Explore", "FAQ"])
