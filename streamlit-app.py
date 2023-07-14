@@ -69,7 +69,7 @@ st.markdown(center_row_text, unsafe_allow_html=True)
 
 def color_surplusvalue(val):
     if str(val) == '0':
-        color = 'azure'
+        color = 'skyblue'
     elif str(val)[0] == '-':
         color = 'lightpink'
     else:
