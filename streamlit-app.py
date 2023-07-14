@@ -78,7 +78,7 @@ def color_surplusvalue(val):
 
 heading_properties = [('font-size', '16px'),('text-align', 'center'),
                       ('color', 'black'),  ('font-weight', 'bold'),
-                      ('background', 'mediumpurple'),('border', '1.2px solid')]
+                      ('background', '#9e99e5'),('border', '1.2px solid')]
 
 #set font color to black for all cells
 cell_properties = [('font-size', '16px'),('text-align', 'center'),('color','black')]
