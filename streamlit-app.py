@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title="Big Data for NBA", page_icon="🏀", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Hooponomics: The NBA Player Value Predictor", page_icon="🏀", initial_sidebar_state="expanded")
 
 ##########################################
 ##  Load and Prep Data                  ##
@@ -122,7 +122,7 @@ with col2:
 with col3:
     st.write("")
 
-st.sidebar.markdown(" ## About Big Data for NBA")
+st.sidebar.markdown(" ## About Hooponomics")
 st.sidebar.markdown("This prediction model places each current NBA player into one of seven market value buckets, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )              
 
 
