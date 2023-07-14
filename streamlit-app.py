@@ -124,7 +124,7 @@ with col3:
     st.write("")
 
 st.sidebar.markdown(" ## About Hooponomics")
-st.sidebar.markdown("The Hooponomics prediction model places each NBA player into one of seven market value buckets, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )              
+st.sidebar.markdown("This prediction model places each current NBA player into one of seven market value buckets, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )              
 
 
 ##########################################
