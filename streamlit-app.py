@@ -40,63 +40,61 @@ cols = ['Name','Team','Position', 'Age', 'Height', 'Weight', 'Salary ($M)','Mark
 ##########################################
 ##  Style and Formatting                ##
 ##########################################
-#################################################
-##  Reinvented Aesthetics & Configuration     ##
-#################################################
 
-# HTML for tables aesthetics
+# CSS for tables
 
-no_table_index = """
-                <style>
-                thead tr th:first-child {visibility:hidden}
-                tbody th {visibility:hidden}
-                </style>   """
+hide_table_row_index = """
+            <style>
+            thead tr th:first-child {display:none}
+            tbody th {display:none}
+            </style>   """
 
-align_title_center = """
+center_heading_text = """
     <style>
         .col_heading   {text-align: center !important}
     </style>          """
     
-row_text_alignment = """
+center_row_text = """
     <style>
         td  {text-align: center !important}
     </style>      """
 
-# Apply HTML styling using Markdown
+# Inject CSS with Markdown
 
-st.markdown(no_table_index, unsafe_allow_html=True)
-st.markdown(align_title_center, unsafe_allow_html=True) 
-st.markdown(row_text_alignment, unsafe_allow_html=True) 
+st.markdown(hide_table_row_index, unsafe_allow_html=True)
+st.markdown(center_heading_text, unsafe_allow_html=True) 
+st.markdown(center_row_text, unsafe_allow_html=True) 
 
-# Further Table Styling
+# More Table Styling
 
 def color_surplusvalue(val):
     if str(val) == '0':
-        color = 'mintcream'
+        color = 'azure'
     elif str(val)[0] == '-':
-        color = 'mistyrose'
+        color = 'lightpink'
     else:
-        color = 'honeydew'
+        color = 'lightgreen'
     return 'background-color: %s' % color
 
-title_properties = [('font-size', '16px'),('text-align', 'center'),
-                    ('color', 'black'),  ('font-weight', 'bold'),
-                    ('background', 'turquoise'),('border', '1.2px solid')]
+heading_properties = [('font-size', '16px'),('text-align', 'center'),
+                      ('color', 'black'),  ('font-weight', 'bold'),
+                      ('background', 'mediumturquoise'),('border', '1.2px solid')]
 
 #set font color to black for all cells
 cell_properties = [('font-size', '16px'),('text-align', 'center'),('color','black')]
 
-dfstyle = [{"selector": "th", "props": title_properties},
+dfstyle = [{"selector": "th", "props": heading_properties},
                {"selector": "td", "props": cell_properties}]
 
-# Expander Appearance Modification
+# Expander Styling
 
 st.markdown(
     """
 <style>
 .streamlit-expanderHeader {
-    font-weight: bold;
-    background: lavenderblush;
+ #   font-weight: bold;
+    background: aliceblue;
+    font-size: 18px;
     color: black;
 }
 </style>
