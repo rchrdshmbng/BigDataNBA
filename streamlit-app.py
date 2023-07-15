@@ -435,9 +435,3 @@ Empirically speaking, if a player is talented enough to be eligible for a salary
         
         st.write('''A nice thing about the Random Forest Classifier model is that in addition to predicting a player's market value, it also gives a probablity estimate for that prediction (in technical terms, the scikit-learn 'predict_proba' method returns the percentage of trees in the forest that voted for that class). To get the most similar players to Player X, I looked at all the players at the same position in the same market value bucket, and sorted them by closest probability estimate to Player X. ''', unsafe_allow_html=True)
   
-    ##########
-    expand_faq9 = st.expander("🏀   Where can I see the code for the model?")
-    with expand_faq9:
-        
-        st.write('''Still under construction 🤓 ''', unsafe_allow_html=True)
-
