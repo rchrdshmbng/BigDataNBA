@@ -183,7 +183,7 @@ Classifier that uses the following information to predict a player's market valu
 Minutes Per Game, Points Per Game, Usage Percentage, Offensive Box Plus/Minus (OBPM), Value Over Replacement Player (VORP), 
 and Win Shares (WS), all scraped from [Basketball Reference](http://www.basketball-reference.com).  
 
-The seven market value classes used were:  $0-5M, $5-10M, $10-15M, $15-20M, $20-25M, $25-30M, and $30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
+The seven market value classes used were:  \$0-5M, \$5-10M, \$10-15M, \$15-20M, \$20-25M, \$25-30M, and $30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
 
     
 ##########################################
@@ -207,7 +207,7 @@ Classifier that uses the following information to predict a player's market valu
 Minutes Per Game, Points Per Game, Usage Percentage, Offensive Box Plus/Minus (OBPM), Value Over Replacement Player (VORP), 
 and Win Shares (WS), all scraped from [Basketball Reference](http://www.basketball-reference.com).  
 
-The seven market value classes used were:  $0-5M, $5-10M, $10-15M, $15-20M, $20-25M, $25-30M, and $30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
+The seven market value classes used were: \$0-5M, \$5-10M, \$10-15M, \$15-20M, \$20-25M, \$25-30M, and $30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
 
     
 ##########################################
