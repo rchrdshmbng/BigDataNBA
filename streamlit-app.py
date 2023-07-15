@@ -110,22 +110,22 @@ st.markdown(
 ##########################################
 
 st.title("Hooponomics: The NBA Player Value Predictor")
-st.markdown('''##### <span style="color:gray">Predicting NBA players' market value based on their statistical performance</span>
-            ''', unsafe_allow_html=True)
+st.markdown('''##### <span style="color:gray">Predicting NBA players' market value based on their statistical performance</span>''', unsafe_allow_html=True)
                 
 tab_player, tab_team, tab_explore, tab_faq = st.tabs(["Player Lookup", "Team Lookup", "Explore", "FAQ"])
 
-col1, col2, col3 = st.sidebar.columns([1,8,1])
+col1, col2, col3 = st.sidebar.columns([1, 8, 1])
 with col1:
     st.write("")
 with col2:
-    st.image('figures/playerphoto.jpg',  use_column_width=True)
+    st.image('figures/playerphoto.jpg', use_column_width=True)
 with col3:
     st.write("")
 
 st.sidebar.markdown(" ## About Hooponomics")
-st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value buckets, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )              
+st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value buckets, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics.")
 
+# Add CSS to change the sidebar color
 st.markdown(
     """
     <style>
