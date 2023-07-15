@@ -382,7 +382,7 @@ with tab_guide:
     ##########
     guide7 = st.expander("🏀 Why is $30M+ the highest class?")
     with guide7:
-        st.write('''As per NBA rules, the first year of a new contract can't exceed a range of $28.1M to $39.3M. Most teams offer the highest available salary to eligible players, hence we grouped all "max players" into a $30M+ class.''')
+        st.write('''As per NBA rules, the first year of a new contract can't exceed a range of \$28.1M to \$39.3M. Most teams offer the highest available salary to eligible players, hence we grouped all "max players" into a $30M+ class.''')
 
     ##########
     guide8 = st.expander("🏀 Determining Similar Players")
