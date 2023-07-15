@@ -124,7 +124,7 @@ with col3:
     st.write("")
 
 st.sidebar.markdown(" ## About Hooponomics")
-st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value buckets, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )
+st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value classes, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )
 
 ##########################################
 ## Player Tab                           ##
@@ -176,14 +176,14 @@ with tab_player:
                          )                                                  
     st.table(styler_mostsimilar)
     
-    st.success('''**A Brief Note on Methods:**  
+    st.success('''**Note on Our Algorithm:**  
 
 The machine learning model deployed in this app is a Random Forest 
 Classifier that uses the following information to predict a player's market value: Games Played, Games Started, 
 Minutes Per Game, Points Per Game, Usage Percentage, Offensive Box Plus/Minus (OBPM), Value Over Replacement Player (VORP), 
 and Win Shares (WS), all scraped from [Basketball Reference](http://www.basketball-reference.com).  
 
-The seven market value buckets used were:  \$0-5M, \$5-10M, \$10-15M, \$15-20M, \$20-25M, \$25-30M, and \$30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
+The seven market value classes used were:  $0-5M, $5-10M, $10-15M, $15-20M, $20-25M, $25-30M, and $30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
 
     
 ##########################################
@@ -207,7 +207,7 @@ Classifier that uses the following information to predict a player's market valu
 Minutes Per Game, Points Per Game, Usage Percentage, Offensive Box Plus/Minus (OBPM), Value Over Replacement Player (VORP), 
 and Win Shares (WS), all scraped from [Basketball Reference](http://www.basketball-reference.com).  
 
-The seven market value buckets used were:  \$0-5M, \$5-10M, \$10-15M, \$15-20M, \$20-25M, \$25-30M, and \$30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
+The seven market value classes used were:  $0-5M, $5-10M, $10-15M, $15-20M, $20-25M, $25-30M, and $30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
 
     
 ##########################################
@@ -380,9 +380,9 @@ with tab_guide:
         st.write('''Surplus value is the conservative difference between a player's market value and his actual salary. It's zero when the salary is within the market value range, and it's the difference when the salary falls outside this range.''')
 
     ##########
-    guide7 = st.expander("🏀 Why is \$30M+ the Highest Bucket?")
+    guide7 = st.expander("🏀 Why is $30M+ the highest class?")
     with guide7:
-        st.write('''As per NBA rules, the first year of a new contract can't exceed a range of \$28.1M to \$39.3M. Most teams offer the highest available salary to eligible players, hence we grouped all "max players" into a \$30M+ bucket.''')
+        st.write('''As per NBA rules, the first year of a new contract can't exceed a range of $28.1M to $39.3M. Most teams offer the highest available salary to eligible players, hence we grouped all "max players" into a $30M+ class.''')
 
     ##########
     guide8 = st.expander("🏀 Determining Similar Players")
