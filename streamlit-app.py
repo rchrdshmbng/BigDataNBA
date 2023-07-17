@@ -299,11 +299,12 @@ with tab_explore:
 
     with expand_visualization:
         # Convert Age and Surplus Value columns to numeric
-        dfplayers['Age'] = pd.to_numeric(dfplayers['Age'], errors='coerce')
-        dfplayers['Surplus Value ($M)'] = pd.to_numeric(dfplayers['Surplus Value ($M)'], errors='coerce')
+        dfplayers_sp = dfplayers
+        dfplayers_sp['Age'] = pd.to_numeric(dfplayers_sp['Age'], errors='coerce')
+        dfplayers_sp['Surplus Value ($M)'] = pd.to_numeric(dfplayers_sp['Surplus Value ($M)'], errors='coerce')
 
         # Create scatter plot using Plotly
-        fig = px.scatter(dfplayers, x="Age", y="Surplus Value ($M)", title='Age vs Surplus Value')
+        fig = px.scatter(dfplayers_sp, x="Age", y="Surplus Value ($M)", title='Age vs Surplus Value')
 
         # Display scatter plot
         st.plotly_chart(fig)      
