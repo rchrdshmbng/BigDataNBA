@@ -178,12 +178,11 @@ with tab_player:
     
     st.success('''**Note on Our Algorithm:**  
 
-The machine learning model deployed in this app is a Random Forest 
-Classifier that uses the following information to predict a player's market value: Games Played, Games Started, 
-Minutes Per Game, Points Per Game, Usage Percentage, Offensive Box Plus/Minus (OBPM), Value Over Replacement Player (VORP), 
-and Win Shares (WS), all scraped from [Basketball Reference](http://www.basketball-reference.com).  
-
-The seven market value classes used were:  \$0-5M, \$5-10M, \$10-15M, \$15-20M, \$20-25M, \$25-30M, and $30M+.  In keeping with best data science practices, the model was trained and fine-tuned on player data from previous years and was not exposed to any data from the 2021-22 NBA season before generating these predictions.''')
+This applicatiom uses a Random Forest Classifier as its machine learning model. 
+This model uses data, acquired from [Basketball Reference](http://www.basketball-reference.com), to estimate a player's market value. 
+These data include Games Played, Games Started, Minutes Per Game, Points Per Game, Usage Percentage, Offensive Box Plus/Minus (OBPM), Value Over Replacement Player (VORP), and Win Shares (WS). 
+The algorithm categorizes the market value into seven classes: \$0-5M, \$5-10M, \$10-15M, \$15-20M, \$20-25M, \$25-30M, and $30M+. 
+Just like what we learned from our Data Science class, the model underwent training and fine-tuning using historical player data, excluding any information from the 2021-22 NBA season, before generating these predictions.''')
 
     
 ##########################################
