@@ -4,6 +4,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px
 
 st.set_page_config(page_title="Hooponomics: The NBA Player Value Predictor", page_icon="🏀", initial_sidebar_state="expanded")
 
@@ -292,7 +293,20 @@ with tab_explore:
                                   .applymap(color_surplusvalue, subset=pd.IndexSlice[:, ['Surplus Value ($M)']])                                                    )
    
             st.table(styler_overvalued)
-          
+    
+    # Add a new expander for visualization
+    expand_visualization = st.expander("Player Statistics Visualization", expanded=False)
+
+    with expand_visualization:
+        # Convert Age and Surplus Value columns to numeric
+        dfplayers['Age'] = pd.to_numeric(dfplayers['Age'], errors='coerce')
+        dfplayers['Surplus Value ($M)'] = pd.to_numeric(dfplayers['Surplus Value ($M)'], errors='coerce')
+
+        # Create scatter plot using Plotly
+        fig = px.scatter(dfplayers, x="Age", y="Surplus Value ($M)", title='Age vs Surplus Value')
+
+        # Display scatter plot
+        st.plotly_chart(fig)      
         
     ##########   
     expand_teamvalues = st.expander("Net Surplus Value by Team")
