@@ -178,7 +178,7 @@ with tab_player:
     
     st.success('''**Note on Our Algorithm:**  
 
-This applicatiom uses a Random Forest Classifier as its machine learning model. 
+This application uses a Random Forest Classifier as its machine learning model. 
 This model uses data, acquired from [Basketball Reference](http://www.basketball-reference.com), to estimate a player's market value. 
 These data include Games Played, Games Started, Minutes Per Game, Points Per Game, Usage Percentage, Offensive Box Plus/Minus (OBPM), Value Over Replacement Player (VORP), and Win Shares (WS). 
 
