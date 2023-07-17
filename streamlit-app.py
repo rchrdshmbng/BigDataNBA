@@ -124,7 +124,7 @@ with col3:
     st.write("")
 
 st.sidebar.markdown(" ## About Hooponomics")
-st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value classes, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season.  It was trained on free agent data from the preceding five years, using a curated set of basic player stats and advanced metrics."  )
+st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value classes, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season. We trained the model using free agent data from the preceding five years, using player stats and metrics. - VV LP RA"  )
 
 ##########################################
 ## Player Tab                           ##
@@ -151,7 +151,7 @@ with tab_player:
     st.write(f'''
          ##### <div style="text-align: center"> In the 2021-22 NBA season, <span style="color:blue">[{player}]({player_url})</span> earned a salary of <span style="color:blue"> {player_salary}   </span> </div>
          
-          ##### <div style="text-align: center"> According to our model, his market value was <span style="color:blue">{player_marketvalue}</span> </div>
+          ##### <div style="text-align: center"> According to our Hooponomics model, his market value was <span style="color:blue">{player_marketvalue}</span> </div>
          ''', unsafe_allow_html=True)
     
     styler_player = (dfplayers[dfplayers.Name == player][cols]
