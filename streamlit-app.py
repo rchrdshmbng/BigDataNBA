@@ -124,7 +124,7 @@ with col3:
     st.write("")
 
 st.sidebar.markdown(" ## About Hooponomics")
-st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value classes, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season. We trained the model using free agent data from the preceding five years, using player stats and metrics. - VV LP RA"  )
+st.sidebar.markdown("The Hooponomics prediction model places each current NBA player into one of seven market value classes, reflecting the expected yearly salary range if they were to sign a new contract at the end of the 2021-22 season. We trained the model using free agent data from the preceding five years, using player stats and metrics. - Team VLR"  )
 
 ##########################################
 ## Player Tab                           ##
