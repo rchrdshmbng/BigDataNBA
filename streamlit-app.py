@@ -125,7 +125,7 @@ with col3:
     st.write("")
 
 st.sidebar.markdown(" ## About Hooponomics")
-st.sidebar.markdown("The Hooponomics predictive model sorts every active NBA player into one of seven classes that portray their anticipated annual salary if they were to negotiate a fresh contract following the 2021-22 season. This model was developed by using information from the past 5 years, incorporating player statistics and performance indicators. - Team VLR"  )
+st.sidebar.markdown("The Hooponomics predictive model sorts every active NBA player into one of seven classes that portray their anticipated annual salary if they were to negotiate a fresh contract following the 2021-22 season. This model was developed by using information from the past five years, incorporating player statistics and performance indicators. -Team VLR (Vincenzo Lance Richard)"  )
 
 ##########################################
 ## Player Tab                           ##
