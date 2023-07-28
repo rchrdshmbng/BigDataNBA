@@ -19,7 +19,7 @@ Our codebase mainly consists of Python scripts, housed within Jupyter notebooks 
 - `streamlit-app.py`: Python script that creates an interactive web application using Streamlit
 - `data/`: directory containing various .csv files used as input or output in the notebooks
 
-## Assessment Criteria Responses
+## Project Information
 
 - **Clarity of Idea**: Our project aims to objectively analyze and quantify basketball player values based on statistical data and salary information. We use this analysis for contract negotiation, game analysis, player trading, budget cap considerations, fan discussions, and marketing purposes.
 
