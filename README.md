@@ -25,15 +25,11 @@ Our codebase mainly consists of Python scripts, housed within Jupyter notebooks 
 
 - **Choice of Tools and Technologies**: We chose Python due to its wide range of libraries for data manipulation, web scraping, and machine learning. We also use GitHub for version control, collaboration, and code hosting. Streamlit, an open-source Python library, is used to build interactive web applications for our analysis.
 
-- **Complexity and sophistication of the solution**: Our solution involves a multi-step pipeline from web scraping to data preprocessing, exploratory analysis, feature selection/engineering, and machine learning model training and evaluation. We believe this showcases a comprehensive and sophisticated approach.
+- **Complexity and Sophistication of the Solution**: Our solution involves a multi-step pipeline from web scraping to data preprocessing, exploratory analysis, feature selection/engineering, and machine learning model training and evaluation. We believe this showcases a comprehensive and sophisticated approach.
 
-- **Mastery in Implementation**: The implementation effectively demonstrates our proficiency in Python, data analysis, and machine learning. The code is well-structured, documented, and utilizes best practices in software development.
-
-- **Correctness**: Our solution is designed to be correct, reliable, and error-free. However, as with any machine learning model, predictions should always be used in conjunction with expert human judgment.
+- **Correctness**: Our solution is designed to be correct, reliable, and error-free. However, as with any machine learning model, predictions especially when it deals with salary should always be used in conjunction with expert human judgment.
 
 - **Deployment**: Our application is deployed as an interactive web application using Streamlit. This enables users to interact with our findings and adjust parameters in real-time.
-
-- **Code Structure and Documentation**: Our code is well-structured and documented, ensuring readability and maintainability. We follow the best practices of software development, ensuring our project can be understood and utilized by others.
 
 ## Next Steps
 
