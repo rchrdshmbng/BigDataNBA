@@ -403,4 +403,3 @@ with tab_guide:
     guide8 = st.expander("🏀 Determining Similar Players")
     with guide8:
         st.write('''Our Random Forest model, apart from predicting a player's market value, also estimates the probability of this prediction. We used this to find the players most similar to a given player, by comparing these probability estimates.''')
-
