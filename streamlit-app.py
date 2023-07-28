@@ -12,7 +12,7 @@ st.set_page_config(page_title="Hooponomics: The NBA Player Value Predictor", pag
 ##  Load and Prep Data                  ##
 ##########################################
 
-@st.cache
+@st.cache(allow_output_mutation=True)
 def load_and_prep_players():
     dfplayers = pd.read_csv('data/app_dfplayers.csv')
     marketvalue_dict = {0:'0-5', 5:'5-10',10:'10-15',15:'15-20',20:'20-25',25:'25-30', 30:'30+'}
