@@ -23,14 +23,14 @@ def load_and_prep_players():
     dfplayers['Weight'] = dfplayers['Weight'].apply(lambda val: str(val) + ' lb')
     dfplayers['Position'] = dfplayers['Pos']
     dfplayers = dfplayers.set_index('Name', drop=False)
-    return dfplayers.copy()  # Create a copy of the dataframe before returning it
+    return dfplayers
 
 @st.cache
 def load_and_prep_teams():
     dfteams = pd.read_csv('data/app_dfteams.csv')
     team_to_tm = {k:v for k,v in zip(dfteams['Team_Name'],dfteams['Team'])}
     dfteams = dfteams.rename(columns={"Team":"Tm", "Team_Name":"Team", "Surplus_value":"Net Surplus Value ($M)"})
-    return dfteams.copy(), team_to_tm.copy()  # Create a copy of the data and dictionary before returning them
+    return dfteams, team_to_tm
 
 dfplayers = load_and_prep_players()
 dfteams, team_to_tm = load_and_prep_teams()
