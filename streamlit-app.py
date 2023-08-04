@@ -110,7 +110,7 @@ st.markdown(
 ##  Title, Tabs, and Sidebar            ##
 ##########################################
 
-st.title("Hooponomics: The NBA Player Value Predictor")
+st.title("Hooponomics: A Data-Driven Approach to Quantifying NBA Player Value")
 st.markdown('''##### <span style="color:gray">Predicting NBA players' market value based on their statistical performance</span>
             ''', unsafe_allow_html=True)
                 
