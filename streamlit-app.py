@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-st.set_page_config(page_title="Hooponomics: The NBA Player Value Predictor", page_icon="🏀", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Hooponomics: A Data-Driven Approach to Quantifying NBA Player Value", page_icon="🏀", initial_sidebar_state="expanded")
 
 ##########################################
 ##  Load and Prep Data                  ##
