@@ -1,4 +1,4 @@
-# Hooponomics: The NBA Player Value Predictor
+# Hooponomics: A Data-Driven Approach to Quantifying NBA Player Value
 
 ## Introduction
 

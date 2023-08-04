@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-st.set_page_config(page_title="Hooponomics: The NBA Player Value Predictor", page_icon="🏀", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Hooponomics: A Data-Driven Approach to Quantifying NBA Player Value", page_icon="🏀", initial_sidebar_state="expanded")
 
 ##########################################
 ##  Load and Prep Data                  ##
@@ -110,8 +110,8 @@ st.markdown(
 ##  Title, Tabs, and Sidebar            ##
 ##########################################
 
-st.title("Hooponomics: The NBA Player Value Predictor")
-st.markdown('''##### <span style="color:gray">Predicting NBA players' market value based on their statistical performance</span>
+st.title("Hooponomics: A Data-Driven Approach to Quantifying NBA Player Value")
+st.markdown('''##### <span style="color:gray">Predicting NBA player market value based on statistical performance</span>
             ''', unsafe_allow_html=True)
                 
 tab_player, tab_team, tab_explore, tab_guide = st.tabs(["Player Lookup", "Team Lookup", "Explore", "Guide"])
