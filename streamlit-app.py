@@ -377,7 +377,7 @@ with tab_guide:
     ##########
     guide3 = st.expander("🏀 Model Training Process")
     with guide3:
-        st.write('''The model was trained on the data of free agents from 2015 to 2020, using their stats from their contract's last year. We stratified the data into training, validation, and holdout sets, tuned hyperparameters based on the validation set, and finalized the model on the combined data.''')
+        st.write('''The model was trained on the data of free agents from 2015 to 2020, using their stats from their contract's last year. We stratified the data into training, validation, and testing sets, tuned hyperparameters based on the validation set, and finalized the model on the combined data.''')
     
     ##########
     guide4 = st.expander("🏀 Features Considered by the Model")
@@ -387,7 +387,7 @@ with tab_guide:
     ##########
     guide5 = st.expander("🏀 Model Performance")
     with guide5:
-        st.write('''Our model achieved an accuracy of 68% on the 2020 holdout set, with misclassifications generally not being extreme outliers. This supports the model's reliability.''')
+        st.write('''Our model achieved an accuracy of 68% on the 2020 test set, with misclassifications generally not being extreme outliers. This supports the model's reliability.''')
 
     ##########
     guide6 = st.expander("🏀 Surplus Value Calculation")
