@@ -21,4 +21,4 @@ There is also a Python script (`streamlit-app.py`) that creates an interactive w
 
 ## Future Plans
 
-We plan to integrate a reliable API for real-time data of players and teams, adopt Docker containers to accommodate the complexity of the app, and add potential additional features to enhance our project's value and efficiency.
+We plan to integrate a reliable API for real-time data of players and teams, adopt Docker containers to accommodate the complexity of the app, and add potential additional features to enhance the project's value and efficiency.
